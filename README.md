@@ -1,21 +1,28 @@
-# Real-Time Multi-Cloud Carbon Footprint & Cost Optimizer (V1)
+# Real-Time Carbon Footprint Estimator for Cloud Workloads
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-cloud--optimizer--theta.vercel.app-00d8ff?style=for-the-badge&logo=vercel&logoColor=white)](https://cloud-optimizer-theta.vercel.app)
 [![PRD Version](https://img.shields.io/badge/PRD-v1.1-blue.svg)](docs/PRD.md)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Typecheck](https://img.shields.io/badge/TypeScript-Strict-brightgreen.svg)]()
 [![Tests](https://img.shields.io/badge/Tests-21%2F21%20Pass-success.svg)]()
 
-A deterministic, multi-criteria cloud decision engine that evaluates **AWS**, **Google Cloud (GCP)**, and **Microsoft Azure** compute, storage, and egress data transfer costs alongside region-specific carbon footprint emissions and hardware performance scores.
+> 🌐 **Live Web Application:** [https://cloud-optimizer-theta.vercel.app](https://cloud-optimizer-theta.vercel.app)  
+> ⚡ **Live AWS API Gateway Backend:** `https://naby4rtnh6.execute-api.us-east-1.amazonaws.com`
+
+A deterministic, multi-criteria cloud optimization and carbon estimation platform that evaluates **Amazon Web Services (AWS)**, **Google Cloud (GCP)**, and **Microsoft Azure** compute, storage, and data egress costs alongside real-time region-specific carbon footprint emissions and hardware performance scores.
 
 ---
 
 ## 🚀 Key Features & Highlights
 
-- **Pure Provider-Agnostic Engine:** No hard-coded winners. Recommendations are computed dynamically based on user-defined priority weights ($w_{\text{cost}}, w_{\text{carbon}}, w_{\text{performance}}$).
-- **Location-Based Carbon Estimation:** Computes grid emissions ($\text{gCO}_2\text{e/kWh}$) × Power Usage Effectiveness ($\text{PUE}$) × hardware power consumption (min/max vCPU watts, RAM, storage, network energy).
-- **Workload Profile Filtering:** Dynamically adapts utilization (e.g. 40% for web apps, 70% for ML/batch processing) and restricts instance family eligibility based on workload type (`web_app`, `api`, `data_processing`, `machine_learning`, `other`).
+- **Live Multi-Cloud Decision Engine:** No hard-coded winners. Real-time evaluation of AWS, GCP, and Azure configurations based on exact workload durations (hours, days, weeks) and carbon/cost priorities.
+- **EPA Green Impact Translation:** Quantifies CO₂e emissions into tangible real-world equivalents (passenger car kilometers, mature tree carbon absorption, smartphone charge cycles, LED runtime hours).
+- **Spatial Geo-Shift Simulator:** Demonstrates carbon-reduction potential by shifting workloads to greener geographic regions with lower marginal grid carbon intensity.
+- **Scope 2 & 3 Carbon Accounting:** Distinguishes between GHG Protocol Scope 2 operational electricity grid emissions and Scope 3 embodied hardware manufacturing carbon.
+- **Auditable PDF Reports:** One-click executive ESG audit reporting with print-optimized summaries, data provenance, and methodologies.
+- **Pure Provider-Agnostic Engine:** Location-based marginal grid emissions ($\text{gCO}_2\text{e/kWh}$) × Power Usage Effectiveness ($\text{PUE}$) × hardware power consumption (min/max vCPU watts, RAM, storage, network energy).
 - **Data Provenance & Transparency:** Every cost estimate, carbon value, grid intensity factor, and benchmark score carries strict metadata (`source`, `retrievedAt`, `dataType`, `methodology`).
-- **Modern Monorepo Stack:** React 18 + Vite + TypeScript + Tailwind CSS + Recharts frontend paired with a Node.js 20 TypeScript AWS Lambda backend API Gateway service and SAM template.
+- **Modern Monorepo Stack:** React 19 + Vite + TypeScript + Tailwind CSS v4 + Recharts frontend paired with a Node.js 20 TypeScript AWS Lambda backend API Gateway service and DynamoDB history.
 
 ---
 
@@ -23,7 +30,7 @@ A deterministic, multi-criteria cloud decision engine that evaluates **AWS**, **
 
 | Workspace Package | Path | Role & Technology |
 |-------------------|------|-------------------|
-| **Frontend** | `frontend/` | React 18, Vite, TypeScript, Tailwind CSS, Recharts, TanStack Router |
+| **Frontend** | `frontend/` | React 19, Vite, TypeScript, Tailwind CSS v4, Recharts, TanStack Router |
 | **Backend** | `backend/` | Node.js 20 Lambda handlers, API Gateway router, DynamoDB repository, Local Dev Server |
 | **Shared Library** | `shared/` | Canonical TypeScript types, Zod validation schemas, Scoring Engine, Estimators |
 | **Data Pipeline** | `data-pipeline/` | Offline data curation, catalog ingestion, provenance validator, snapshot compiler |
@@ -38,7 +45,7 @@ A deterministic, multi-criteria cloud decision engine that evaluates **AWS**, **
 
 ### 2. Installation
 ```bash
-git clone https://github.com/sujithkumar505/cloud-optimizer.git
+git clone https://github.com/iykygani09/cloud-optimizer.git
 cd cloud-optimizer
 npm install
 ```
