@@ -1,0 +1,56 @@
+[
+  {
+    "id": "aws-pricing-bulk",
+    "name": "AWS Price List Bulk API",
+    "url": "https://aws.amazon.com/pricing/",
+    "type": "official",
+    "terms": "AWS Customer Agreement & Pricing Terms",
+    "retrievedAt": "2026-09-23",
+    "usedFor": ["compute_hour", "storage_gb_month", "egress_gb"]
+  },
+  {
+    "id": "gcp-cloud-billing-api",
+    "name": "Google Cloud Billing Catalog API",
+    "url": "https://cloud.google.com/billing/docs/resources/api",
+    "type": "official",
+    "terms": "Google Cloud Platform Terms of Service",
+    "retrievedAt": "2026-09-23",
+    "usedFor": ["compute_hour", "storage_gb_month", "egress_gb"]
+  },
+  {
+    "id": "azure-retail-prices-api",
+    "name": "Azure Retail Prices API",
+    "url": "https://azure.microsoft.com/en-us/pricing/",
+    "type": "official",
+    "terms": "Microsoft Azure Legal Information & Licensing",
+    "retrievedAt": "2026-09-23",
+    "usedFor": ["compute_hour", "storage_gb_month", "egress_gb"]
+  },
+  {
+    "id": "cloud-carbon-footprint-coefficients",
+    "name": "Cloud Carbon Footprint Open Methodology",
+    "url": "https://www.cloudcarbonfootprint.org/docs/coefficients-pipeline",
+    "type": "estimated",
+    "terms": "Apache 2.0 Licence",
+    "retrievedAt": "2026-09-23",
+    "usedFor": ["power_coefficients", "pue", "embodied_emissions"]
+  },
+  {
+    "id": "ember-grid-intensity-2023",
+    "name": "Ember Yearly Electricity Data 2023",
+    "url": "https://ember-climate.org/data/data-tools/data-explorer/",
+    "type": "estimated",
+    "terms": "Creative Commons Attribution 4.0 International",
+    "retrievedAt": "2026-09-23",
+    "usedFor": ["grid_intensity"]
+  },
+  {
+    "id": "spec-cpu-benchmarks",
+    "name": "SPEC CPU 2017 & Geekbench Relative Index",
+    "url": "https://www.spec.org/cpu2017/results/",
+    "type": "benchmark",
+    "terms": "SPEC CPU Benchmark Results Public Repository",
+    "retrievedAt": "2026-09-23",
+    "usedFor": ["cpu_family_index"]
+  }
+]

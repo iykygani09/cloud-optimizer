@@ -1,0 +1,2695 @@
+{
+  "datasetVersion": "2026-09-23",
+  "builtAt": "2026-10-25T08:13:35.187Z",
+  "instances": [
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "t4g.small",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 2,
+      "cpuArch": "arm",
+      "cpuFamilyKey": "aws_graviton3",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/t4g/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "t4g.medium",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 4,
+      "cpuArch": "arm",
+      "cpuFamilyKey": "aws_graviton3",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/t4g/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "m5.large",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 8,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/m5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "m5.xlarge",
+      "family": "general",
+      "vcpu": 4,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/m5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "m5.2xlarge",
+      "family": "general",
+      "vcpu": 8,
+      "ramGb": 32,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/m5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "c5.large",
+      "family": "compute",
+      "vcpu": 2,
+      "ramGb": 4,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/c5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "c5.xlarge",
+      "family": "compute",
+      "vcpu": 4,
+      "ramGb": 8,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/c5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "c5.2xlarge",
+      "family": "compute",
+      "vcpu": 8,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/c5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "r5.large",
+      "family": "memory",
+      "vcpu": 2,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/r5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "r5.xlarge",
+      "family": "memory",
+      "vcpu": 4,
+      "ramGb": 32,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/r5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "aws",
+      "service": "Amazon EC2",
+      "instanceType": "r5.2xlarge",
+      "family": "memory",
+      "vcpu": 8,
+      "ramGb": 64,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "aws_intel_cascade_lake",
+      "specSource": "https://aws.amazon.com/ec2/instance-types/r5/",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "e2-micro",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 1,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_e2_shared",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#e2_machine_types",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "e2-medium",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 4,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_e2_shared",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#e2_machine_types",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "n2-standard-2",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 8,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_intel_cascade_lake",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#n2_machine_types",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "n2-standard-4",
+      "family": "general",
+      "vcpu": 4,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_intel_cascade_lake",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#n2_machine_types",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "n2-standard-8",
+      "family": "general",
+      "vcpu": 8,
+      "ramGb": 32,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_intel_cascade_lake",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#n2_machine_types",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "c2-standard-4",
+      "family": "compute",
+      "vcpu": 4,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_compute_c2",
+      "specSource": "https://cloud.google.com/compute/docs/compute-optimized-machines#c2_machine_types",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "c2-standard-8",
+      "family": "compute",
+      "vcpu": 8,
+      "ramGb": 32,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_compute_c2",
+      "specSource": "https://cloud.google.com/compute/docs/compute-optimized-machines#c2_machine_types",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "n2-highmem-2",
+      "family": "memory",
+      "vcpu": 2,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_intel_cascade_lake",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#n2_high-memory",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "n2-highmem-4",
+      "family": "memory",
+      "vcpu": 4,
+      "ramGb": 32,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_intel_cascade_lake",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#n2_high-memory",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "gcp",
+      "service": "Google Cloud Compute Engine",
+      "instanceType": "n2-highmem-8",
+      "family": "memory",
+      "vcpu": 8,
+      "ramGb": 64,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "gcp_intel_cascade_lake",
+      "specSource": "https://cloud.google.com/compute/docs/general-purpose-machines#n2_high-memory",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "B2s",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 4,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_cascade_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes-b-burstable-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "D2s_v5",
+      "family": "general",
+      "vcpu": 2,
+      "ramGb": 8,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_ice_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/dv5-dsv5-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "D4s_v5",
+      "family": "general",
+      "vcpu": 4,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_ice_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/dv5-dsv5-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "D8s_v5",
+      "family": "general",
+      "vcpu": 8,
+      "ramGb": 32,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_ice_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/dv5-dsv5-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "F2s_v2",
+      "family": "compute",
+      "vcpu": 2,
+      "ramGb": 4,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_cascade_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/fsv2-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "F4s_v2",
+      "family": "compute",
+      "vcpu": 4,
+      "ramGb": 8,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_cascade_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/fsv2-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "F8s_v2",
+      "family": "compute",
+      "vcpu": 8,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_cascade_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/fsv2-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "E2s_v5",
+      "family": "memory",
+      "vcpu": 2,
+      "ramGb": 16,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_ice_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/ev5-esv5-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "E4s_v5",
+      "family": "memory",
+      "vcpu": 4,
+      "ramGb": 32,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_ice_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/ev5-esv5-series",
+      "specRetrievedAt": "2026-09-23"
+    },
+    {
+      "provider": "azure",
+      "service": "Azure Virtual Machines",
+      "instanceType": "E8s_v5",
+      "family": "memory",
+      "vcpu": 8,
+      "ramGb": 64,
+      "cpuArch": "x86",
+      "cpuFamilyKey": "azure_intel_ice_lake",
+      "specSource": "https://learn.microsoft.com/en-us/azure/virtual-machines/ev5-esv5-series",
+      "specRetrievedAt": "2026-09-23"
+    }
+  ],
+  "prices": [
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "t4g.small",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0168,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "t4g.medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0336,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "m5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.101,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "m5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.202,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "m5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.404,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "c5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.089,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "c5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.178,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "c5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.356,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "r5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.133,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "r5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.266,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "r5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.532,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "gp3",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.08,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ebs/pricing/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-south-1",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.1093,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "t4g.small",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0168,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "t4g.medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0336,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "m5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.096,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "m5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.192,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "m5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.384,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "c5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.085,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "c5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.17,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "c5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.34,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "r5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.126,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "r5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.252,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "r5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.504,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "gp3",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.08,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ebs/pricing/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "us-east-1",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.09,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "t4g.small",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0188,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "t4g.medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0376,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "m5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.107,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "m5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.214,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "m5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.428,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "c5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.095,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "c5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.19,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "c5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.38,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "r5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.141,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "r5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.282,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "r5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.564,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "gp3",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.088,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ebs/pricing/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "eu-west-1",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.09,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "t4g.small",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0178,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "t4g.medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0356,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "m5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.104,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "m5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.208,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "m5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.416,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "c5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.092,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "c5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.184,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "c5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.368,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "r5.large",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.136,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "r5.xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.272,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "r5.2xlarge",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.544,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "gp3",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.096,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ebs/pricing/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "aws",
+      "providerRegion": "ap-southeast-1",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.12,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://aws.amazon.com/ec2/pricing/on-demand/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "e2-micro",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0084,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "e2-medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0335,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "n2-standard-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.091,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "n2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.182,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "n2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.364,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "c2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.196,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "c2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.392,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "n2-highmem-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.123,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "n2-highmem-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.246,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "n2-highmem-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.492,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "pd-balanced",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.1,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/disks-image-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-south1",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.11,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/vpc/network-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "e2-micro",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0084,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "e2-medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0335,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "n2-standard-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.097,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "n2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.194,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "n2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.388,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "c2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.208,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "c2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.416,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "n2-highmem-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.131,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "n2-highmem-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.262,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "n2-highmem-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.524,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "pd-balanced",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.1,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/disks-image-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "us-east4",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.085,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/vpc/network-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "e2-micro",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0094,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "e2-medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0375,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "n2-standard-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.108,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "n2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.216,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "n2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.432,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "c2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.231,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "c2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.462,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "n2-highmem-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.146,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "n2-highmem-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.292,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "n2-highmem-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.584,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "pd-balanced",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.11,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/disks-image-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "europe-west1",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.085,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/vpc/network-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "e2-micro",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.009,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "e2-medium",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.036,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "n2-standard-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.104,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "n2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.208,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "n2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.416,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "c2-standard-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.222,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "c2-standard-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.444,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "n2-highmem-2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.14,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "n2-highmem-4",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.28,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "n2-highmem-8",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.56,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/all-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "pd-balanced",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.108,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/compute/disks-image-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "gcp",
+      "providerRegion": "asia-southeast1",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.12,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://cloud.google.com/vpc/network-pricing",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "B2s",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.044,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "D2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.102,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "D4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.204,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "D8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.408,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "F2s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.089,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "F4s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.178,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "F8s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.356,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "E2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.134,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "E4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.268,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "E8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.536,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "premium-ssd",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.1,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/managed-disks/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "centralindia",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.11,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "B2s",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.0416,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "D2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.096,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "D4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.192,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "D8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.384,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "F2s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.084,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "F4s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.168,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "F8s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.336,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "E2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.126,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "E4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.252,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "E8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.504,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "premium-ssd",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.1,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/managed-disks/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "eastus",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.087,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "B2s",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.046,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "D2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.107,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "D4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.214,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "D8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.428,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "F2s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.094,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "F4s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.188,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "F8s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.376,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "E2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.141,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "E4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.282,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "E8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.564,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "premium-ssd",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.11,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/managed-disks/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "westeurope",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.087,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "B2s",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.045,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "D2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.104,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "D4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.208,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "D8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.416,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "F2s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.091,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "F4s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.182,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "F8s_v2",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.364,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "E2s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.136,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "E4s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.272,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "E8s_v5",
+      "kind": "compute_hour",
+      "price": {
+        "value": 0.544,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/virtual-machines/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "premium-ssd",
+      "kind": "storage_gb_month",
+      "price": {
+        "value": 0.108,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/managed-disks/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    {
+      "provider": "azure",
+      "providerRegion": "southeastasia",
+      "sku": "egress",
+      "kind": "egress_gb",
+      "price": {
+        "value": 0.12,
+        "unit": "USD",
+        "dataType": "official",
+        "source": "https://azure.microsoft.com/en-us/pricing/details/bandwidth/",
+        "retrievedAt": "2026-09-23"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "aws-pricing-bulk",
+      "name": "AWS Price List Bulk API",
+      "url": "https://aws.amazon.com/pricing/",
+      "type": "official",
+      "terms": "AWS Customer Agreement & Pricing Terms",
+      "retrievedAt": "2026-09-23",
+      "usedFor": [
+        "compute_hour",
+        "storage_gb_month",
+        "egress_gb"
+      ]
+    },
+    {
+      "id": "gcp-cloud-billing-api",
+      "name": "Google Cloud Billing Catalog API",
+      "url": "https://cloud.google.com/billing/docs/resources/api",
+      "type": "official",
+      "terms": "Google Cloud Platform Terms of Service",
+      "retrievedAt": "2026-09-23",
+      "usedFor": [
+        "compute_hour",
+        "storage_gb_month",
+        "egress_gb"
+      ]
+    },
+    {
+      "id": "azure-retail-prices-api",
+      "name": "Azure Retail Prices API",
+      "url": "https://azure.microsoft.com/en-us/pricing/",
+      "type": "official",
+      "terms": "Microsoft Azure Legal Information & Licensing",
+      "retrievedAt": "2026-09-23",
+      "usedFor": [
+        "compute_hour",
+        "storage_gb_month",
+        "egress_gb"
+      ]
+    },
+    {
+      "id": "cloud-carbon-footprint-coefficients",
+      "name": "Cloud Carbon Footprint Open Methodology",
+      "url": "https://www.cloudcarbonfootprint.org/docs/coefficients-pipeline",
+      "type": "estimated",
+      "terms": "Apache 2.0 Licence",
+      "retrievedAt": "2026-09-23",
+      "usedFor": [
+        "power_coefficients",
+        "pue",
+        "embodied_emissions"
+      ]
+    },
+    {
+      "id": "ember-grid-intensity-2023",
+      "name": "Ember Yearly Electricity Data 2023",
+      "url": "https://ember-climate.org/data/data-tools/data-explorer/",
+      "type": "estimated",
+      "terms": "Creative Commons Attribution 4.0 International",
+      "retrievedAt": "2026-09-23",
+      "usedFor": [
+        "grid_intensity"
+      ]
+    },
+    {
+      "id": "spec-cpu-benchmarks",
+      "name": "SPEC CPU 2017 & Geekbench Relative Index",
+      "url": "https://www.spec.org/cpu2017/results/",
+      "type": "benchmark",
+      "terms": "SPEC CPU Benchmark Results Public Repository",
+      "retrievedAt": "2026-09-23",
+      "usedFor": [
+        "cpu_family_index"
+      ]
+    }
+  ],
+  "assumptions": {
+    "daysPerMonth": {
+      "value": 30,
+      "unit": "days",
+      "dataType": "estimated",
+      "source": "PRD Section 8.1",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Standard 30-day billing month design assumption"
+    },
+    "pricingModel": {
+      "value": 0,
+      "unit": "on-demand list",
+      "dataType": "official",
+      "source": "Official Cloud Pricing APIs",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Public list prices for on-demand compute and storage, no discounts or free tiers"
+    },
+    "carbonMethod": {
+      "value": 0,
+      "unit": "location-based",
+      "dataType": "estimated",
+      "source": "Cloud Carbon Footprint Methodology",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Location-based grid emissions intensity × PUE × hardware power. Market-based claims excluded."
+    },
+    "performanceWeights": {
+      "cpuFamilyWeight": 0.7,
+      "headroomWeight": 0.3,
+      "source": "PRD Section 8.3",
+      "retrievedAt": "2026-09-23",
+      "methodology": "70% CPU relative benchmark index + 30% headroom index"
+    },
+    "performanceThresholds": {
+      "low": 0,
+      "standard": 40,
+      "high": 60,
+      "critical": 75
+    },
+    "workloadProfiles": {
+      "web_app": {
+        "utilization": 0.4,
+        "allowedFamilies": [
+          "general",
+          "compute"
+        ],
+        "dataType": "estimated",
+        "source": "PRD Section 8.6",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Design assumption for interactive web applications"
+      },
+      "api": {
+        "utilization": 0.4,
+        "allowedFamilies": [
+          "general",
+          "compute"
+        ],
+        "dataType": "estimated",
+        "source": "PRD Section 8.6",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Design assumption for microservices and API gateways"
+      },
+      "data_processing": {
+        "utilization": 0.7,
+        "allowedFamilies": [
+          "general",
+          "compute",
+          "memory"
+        ],
+        "dataType": "estimated",
+        "source": "PRD Section 8.6",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Design assumption for batch and streaming data processing"
+      },
+      "machine_learning": {
+        "utilization": 0.7,
+        "allowedFamilies": [
+          "general",
+          "compute",
+          "memory"
+        ],
+        "dataType": "estimated",
+        "source": "PRD Section 8.6",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Design assumption for CPU-bound machine learning training & inference"
+      },
+      "other": {
+        "utilization": 0.5,
+        "allowedFamilies": [
+          "general",
+          "compute",
+          "memory"
+        ],
+        "dataType": "estimated",
+        "source": "PRD Section 8.6",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Default general-purpose workload utilization assumption"
+      }
+    }
+  },
+  "coefficients": {
+    "pue": {
+      "aws": {
+        "value": 1.15,
+        "unit": "ratio",
+        "dataType": "official",
+        "source": "https://sustainability.aboutamazon.com/environment/the-cloud",
+        "retrievedAt": "2026-09-23"
+      },
+      "gcp": {
+        "value": 1.1,
+        "unit": "ratio",
+        "dataType": "official",
+        "source": "https://www.google.com/about/datacenters/efficiency/",
+        "retrievedAt": "2026-09-23"
+      },
+      "azure": {
+        "value": 1.18,
+        "unit": "ratio",
+        "dataType": "official",
+        "source": "https://www.microsoft.com/en-us/sustainability/",
+        "retrievedAt": "2026-09-23"
+      }
+    },
+    "power": {
+      "minWattsPerVcpu": {
+        "value": 0.74,
+        "unit": "W/vCPU",
+        "dataType": "estimated",
+        "source": "Cloud Carbon Footprint Coefficients v0.15",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Idle power consumption per vCPU across modern x86/ARM server CPUs"
+      },
+      "maxWattsPerVcpu": {
+        "value": 3.5,
+        "unit": "W/vCPU",
+        "dataType": "estimated",
+        "source": "Cloud Carbon Footprint Coefficients v0.15",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Peak load power consumption per vCPU at 100% utilization"
+      },
+      "memoryKwhPerGbHour": {
+        "value": 0.000392,
+        "unit": "kWh/GB-hour",
+        "dataType": "estimated",
+        "source": "Cloud Carbon Footprint Coefficients v0.15",
+        "retrievedAt": "2026-09-23",
+        "methodology": "DDR4/DDR5 server RAM energy consumption per GB hour"
+      },
+      "storageKwhPerGbHour": {
+        "value": 0.0000012,
+        "unit": "kWh/GB-hour",
+        "dataType": "estimated",
+        "source": "Cloud Carbon Footprint Coefficients v0.15",
+        "retrievedAt": "2026-09-23",
+        "methodology": "SSD storage power coefficient per GB hour"
+      },
+      "networkKwhPerGb": {
+        "value": 0.001,
+        "unit": "kWh/GB",
+        "dataType": "estimated",
+        "source": "Cloud Carbon Footprint Network Energy Model",
+        "retrievedAt": "2026-09-23",
+        "methodology": "Data egress network transfer power per GB transmitted"
+      }
+    }
+  },
+  "gridIntensity": {
+    "ap-south-1": {
+      "value": 708,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "Ember Yearly Electricity Data 2023 - India National Grid",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Regional grid carbon intensity for Mumbai region"
+    },
+    "asia-south1": {
+      "value": 708,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "Ember Yearly Electricity Data 2023 - India National Grid",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Regional grid carbon intensity for Mumbai region"
+    },
+    "centralindia": {
+      "value": 708,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "Ember Yearly Electricity Data 2023 - India National Grid",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Regional grid carbon intensity for Pune region"
+    },
+    "us-east-1": {
+      "value": 378,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "EPA eGRID 2022 - N. Virginia Grid Subregion",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Grid emissions factor for RFC East subregion"
+    },
+    "us-east4": {
+      "value": 378,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "EPA eGRID 2022 - N. Virginia Grid Subregion",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Grid emissions factor for RFC East subregion"
+    },
+    "eastus": {
+      "value": 378,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "EPA eGRID 2022 - Virginia Grid Subregion",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Grid emissions factor for RFC East subregion"
+    },
+    "eu-west-1": {
+      "value": 295,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "SEAI Ireland Grid Carbon Intensity 2023",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Annual average grid emissions intensity in Ireland"
+    },
+    "europe-west1": {
+      "value": 210,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "Elia Belgium Electricity Data 2023",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Annual average grid emissions intensity in Belgium"
+    },
+    "westeurope": {
+      "value": 320,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "CBS Netherlands Energy Data 2023",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Annual average grid emissions intensity in Netherlands"
+    },
+    "ap-southeast-1": {
+      "value": 406,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "EMA Singapore Energy Statistics 2023",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Grid emission factor for Singapore national grid"
+    },
+    "asia-southeast1": {
+      "value": 406,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "EMA Singapore Energy Statistics 2023",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Grid emission factor for Singapore national grid"
+    },
+    "southeastasia": {
+      "value": 406,
+      "unit": "gCO2e/kWh",
+      "dataType": "estimated",
+      "source": "EMA Singapore Energy Statistics 2023",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Grid emission factor for Singapore national grid"
+    }
+  },
+  "benchmarks": {
+    "aws_graviton3": {
+      "cpuFamilyIndex": 88,
+      "dataType": "benchmark",
+      "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Normalized per-vCPU SPECrate2017_int_base score for AWS Graviton3 architecture"
+    },
+    "aws_intel_cascade_lake": {
+      "cpuFamilyIndex": 80,
+      "dataType": "benchmark",
+      "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Normalized per-vCPU SPECrate2017_int_base score for Intel Xeon Platinum 8259CL"
+    },
+    "gcp_intel_cascade_lake": {
+      "cpuFamilyIndex": 82,
+      "dataType": "benchmark",
+      "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Normalized per-vCPU SPECrate2017_int_base score for GCP N2 (Intel Cascade/Ice Lake)"
+    },
+    "gcp_e2_shared": {
+      "cpuFamilyIndex": 75,
+      "dataType": "benchmark",
+      "source": "Geekbench 6 Multi-Core Per-vCPU Normalized Index",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Normalized per-vCPU benchmark score for GCP E2 cost-optimized instances"
+    },
+    "gcp_compute_c2": {
+      "cpuFamilyIndex": 90,
+      "dataType": "benchmark",
+      "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Normalized per-vCPU SPECrate2017_int_base score for GCP C2 compute-optimized instances"
+    },
+    "azure_intel_ice_lake": {
+      "cpuFamilyIndex": 84,
+      "dataType": "benchmark",
+      "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Normalized per-vCPU SPECrate2017_int_base score for Azure Dsv5/Esv5 (Intel Ice Lake)"
+    },
+    "azure_intel_cascade_lake": {
+      "cpuFamilyIndex": 78,
+      "dataType": "benchmark",
+      "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Normalized per-vCPU SPECrate2017_int_base score for Azure Fsv2/Bsv2 series"
+    }
+  }
+}

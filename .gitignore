@@ -30,3 +30,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+# AWS SAM
+.aws-sam/
+
+# Environment
+.env
+.env*.local

@@ -1,0 +1,98 @@
+{
+  "ap-south-1": {
+    "value": 708,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "Ember Yearly Electricity Data 2023 - India National Grid",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Regional grid carbon intensity for Mumbai region"
+  },
+  "asia-south1": {
+    "value": 708,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "Ember Yearly Electricity Data 2023 - India National Grid",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Regional grid carbon intensity for Mumbai region"
+  },
+  "centralindia": {
+    "value": 708,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "Ember Yearly Electricity Data 2023 - India National Grid",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Regional grid carbon intensity for Pune region"
+  },
+  "us-east-1": {
+    "value": 378,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "EPA eGRID 2022 - N. Virginia Grid Subregion",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Grid emissions factor for RFC East subregion"
+  },
+  "us-east4": {
+    "value": 378,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "EPA eGRID 2022 - N. Virginia Grid Subregion",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Grid emissions factor for RFC East subregion"
+  },
+  "eastus": {
+    "value": 378,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "EPA eGRID 2022 - Virginia Grid Subregion",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Grid emissions factor for RFC East subregion"
+  },
+  "eu-west-1": {
+    "value": 295,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "SEAI Ireland Grid Carbon Intensity 2023",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Annual average grid emissions intensity in Ireland"
+  },
+  "europe-west1": {
+    "value": 210,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "Elia Belgium Electricity Data 2023",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Annual average grid emissions intensity in Belgium"
+  },
+  "westeurope": {
+    "value": 320,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "CBS Netherlands Energy Data 2023",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Annual average grid emissions intensity in Netherlands"
+  },
+  "ap-southeast-1": {
+    "value": 406,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "EMA Singapore Energy Statistics 2023",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Grid emission factor for Singapore national grid"
+  },
+  "asia-southeast1": {
+    "value": 406,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "EMA Singapore Energy Statistics 2023",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Grid emission factor for Singapore national grid"
+  },
+  "southeastasia": {
+    "value": 406,
+    "unit": "gCO2e/kWh",
+    "dataType": "estimated",
+    "source": "EMA Singapore Energy Statistics 2023",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Grid emission factor for Singapore national grid"
+  }
+}

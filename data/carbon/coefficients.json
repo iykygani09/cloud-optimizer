@@ -1,0 +1,67 @@
+{
+  "pue": {
+    "aws": {
+      "value": 1.15,
+      "unit": "ratio",
+      "dataType": "official",
+      "source": "https://sustainability.aboutamazon.com/environment/the-cloud",
+      "retrievedAt": "2026-09-23"
+    },
+    "gcp": {
+      "value": 1.10,
+      "unit": "ratio",
+      "dataType": "official",
+      "source": "https://www.google.com/about/datacenters/efficiency/",
+      "retrievedAt": "2026-09-23"
+    },
+    "azure": {
+      "value": 1.18,
+      "unit": "ratio",
+      "dataType": "official",
+      "source": "https://www.microsoft.com/en-us/sustainability/",
+      "retrievedAt": "2026-09-23"
+    }
+  },
+  "power": {
+    "minWattsPerVcpu": {
+      "value": 0.74,
+      "unit": "W/vCPU",
+      "dataType": "estimated",
+      "source": "Cloud Carbon Footprint Coefficients v0.15",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Idle power consumption per vCPU across modern x86/ARM server CPUs"
+    },
+    "maxWattsPerVcpu": {
+      "value": 3.50,
+      "unit": "W/vCPU",
+      "dataType": "estimated",
+      "source": "Cloud Carbon Footprint Coefficients v0.15",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Peak load power consumption per vCPU at 100% utilization"
+    },
+    "memoryKwhPerGbHour": {
+      "value": 0.000392,
+      "unit": "kWh/GB-hour",
+      "dataType": "estimated",
+      "source": "Cloud Carbon Footprint Coefficients v0.15",
+      "retrievedAt": "2026-09-23",
+      "methodology": "DDR4/DDR5 server RAM energy consumption per GB hour"
+    },
+    "storageKwhPerGbHour": {
+      "value": 0.0000012,
+      "unit": "kWh/GB-hour",
+      "dataType": "estimated",
+      "source": "Cloud Carbon Footprint Coefficients v0.15",
+      "retrievedAt": "2026-09-23",
+      "methodology": "SSD storage power coefficient per GB hour"
+    },
+    "networkKwhPerGb": {
+      "value": 0.001,
+      "unit": "kWh/GB",
+      "dataType": "estimated",
+      "source": "Cloud Carbon Footprint Network Energy Model",
+      "retrievedAt": "2026-09-23",
+      "methodology": "Data egress network transfer power per GB transmitted"
+    }
+  }
+}

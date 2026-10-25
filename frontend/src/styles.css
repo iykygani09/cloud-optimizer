@@ -1,0 +1,160 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@source "../src";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-provider-aws: var(--provider-aws);
+  --color-provider-gcp: var(--provider-gcp);
+  --color-provider-azure: var(--provider-azure);
+  --color-cost: var(--cost);
+  --color-carbon: var(--carbon);
+  --color-performance: var(--performance);
+  --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.965 0.011 130);
+  --foreground: oklch(0.22 0.035 155);
+  --card: oklch(0.995 0.006 130);
+  --card-foreground: oklch(0.22 0.035 155);
+  --primary: oklch(0.43 0.105 156);
+  --primary-foreground: oklch(0.98 0.01 130);
+  --secondary: oklch(0.91 0.035 150);
+  --secondary-foreground: oklch(0.31 0.06 155);
+  --muted: oklch(0.935 0.015 135);
+  --muted-foreground: oklch(0.47 0.035 150);
+  --accent: oklch(0.88 0.065 150);
+  --accent-foreground: oklch(0.3 0.07 155);
+  --destructive: oklch(0.55 0.18 25);
+  --destructive-foreground: oklch(0.98 0.01 30);
+  --border: oklch(0.84 0.03 145);
+  --input: oklch(0.82 0.035 145);
+  --ring: oklch(0.55 0.12 155);
+  --success: oklch(0.48 0.13 150);
+  --success-foreground: oklch(0.98 0.01 130);
+  --warning: oklch(0.61 0.15 55);
+  --warning-foreground: oklch(0.22 0.04 55);
+  --info: oklch(0.55 0.12 245);
+  --info-foreground: oklch(0.98 0.01 245);
+  --provider-aws: oklch(0.7 0.15 65);
+  --provider-gcp: oklch(0.55 0.17 255);
+  --provider-azure: oklch(0.58 0.12 195);
+  --cost: oklch(0.58 0.16 55);
+  --carbon: oklch(0.48 0.13 150);
+  --performance: oklch(0.53 0.14 245);
+  --elevation-1: 0 1px 2px oklch(0.2 0.03 155 / 0.08);
+  --elevation-2: 0 8px 20px oklch(0.2 0.03 155 / 0.1);
+  --elevation-3: 0 20px 48px oklch(0.2 0.03 155 / 0.14);
+}
+
+.dark {
+  --background: oklch(0.17 0.025 155);
+  --foreground: oklch(0.94 0.02 130);
+  --card: oklch(0.205 0.03 155);
+  --card-foreground: oklch(0.94 0.02 130);
+  --primary: oklch(0.67 0.13 155);
+  --primary-foreground: oklch(0.18 0.03 155);
+  --secondary: oklch(0.27 0.04 155);
+  --secondary-foreground: oklch(0.92 0.02 130);
+  --muted: oklch(0.25 0.03 155);
+  --muted-foreground: oklch(0.72 0.03 140);
+  --accent: oklch(0.3 0.06 155);
+  --accent-foreground: oklch(0.94 0.02 130);
+  --destructive: oklch(0.65 0.16 25);
+  --destructive-foreground: oklch(0.2 0.03 25);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 18%);
+  --ring: oklch(0.67 0.13 155);
+  --success: oklch(0.65 0.13 150);
+  --success-foreground: oklch(0.18 0.03 155);
+  --warning: oklch(0.78 0.14 65);
+  --warning-foreground: oklch(0.2 0.04 55);
+  --info: oklch(0.7 0.12 245);
+  --info-foreground: oklch(0.18 0.03 245);
+  --provider-aws: oklch(0.76 0.15 65);
+  --provider-gcp: oklch(0.7 0.17 255);
+  --provider-azure: oklch(0.7 0.12 195);
+  --cost: oklch(0.76 0.14 65);
+  --carbon: oklch(0.7 0.13 150);
+  --performance: oklch(0.72 0.13 245);
+  --elevation-1: 0 1px 2px oklch(0 0 0 / 0.28);
+  --elevation-2: 0 8px 20px oklch(0 0 0 / 0.32);
+  --elevation-3: 0 20px 48px oklch(0 0 0 / 0.4);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { font-family: var(--font-sans); scroll-behavior: smooth; }
+  body { background: var(--color-background); color: var(--color-foreground); min-width: 320px; letter-spacing: 0; }
+  button, input, select { font: inherit; }
+  button, a, summary, input, select { -webkit-tap-highlight-color: transparent; }
+  button:focus-visible, a:focus-visible, summary:focus-visible, select:focus-visible { outline: 2px solid var(--color-ring); outline-offset: 2px; }
+  svg { stroke-width: 1.5; }
+  ::selection { background: var(--color-accent); color: var(--color-accent-foreground); }
+}
+
+@layer utilities {
+  .surface-grid { background-image: linear-gradient(to right, color-mix(in oklab, var(--color-border) 36%, transparent) 1px, transparent 1px), linear-gradient(to bottom, color-mix(in oklab, var(--color-border) 36%, transparent) 1px, transparent 1px); background-size: 32px 32px; }
+  .display-heading { letter-spacing: 0; }
+  .metric { font-family: var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: 0; }
+  .elevation-1 { box-shadow: var(--elevation-1); }
+  .elevation-2 { box-shadow: var(--elevation-2); }
+  .elevation-3 { box-shadow: var(--elevation-3); }
+  .page-fade { animation: page-fade 180ms ease-out both; }
+  .skeleton { animation: skeleton 1.4s ease-in-out infinite; background: var(--color-muted); }
+  @keyframes page-fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes skeleton { 50% { opacity: .55; } }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, nav, footer, button, .no-print, [aria-label="Result sections"], [role="img"] {
+    display: none !important;
+  }
+  article, section, .elevation-1, .elevation-2, .elevation-3 {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    background: white !important;
+  }
+}

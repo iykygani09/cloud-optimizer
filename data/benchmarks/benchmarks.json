@@ -1,0 +1,51 @@
+{
+  "aws_graviton3": {
+    "cpuFamilyIndex": 88,
+    "dataType": "benchmark",
+    "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Normalized per-vCPU SPECrate2017_int_base score for AWS Graviton3 architecture"
+  },
+  "aws_intel_cascade_lake": {
+    "cpuFamilyIndex": 80,
+    "dataType": "benchmark",
+    "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Normalized per-vCPU SPECrate2017_int_base score for Intel Xeon Platinum 8259CL"
+  },
+  "gcp_intel_cascade_lake": {
+    "cpuFamilyIndex": 82,
+    "dataType": "benchmark",
+    "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Normalized per-vCPU SPECrate2017_int_base score for GCP N2 (Intel Cascade/Ice Lake)"
+  },
+  "gcp_e2_shared": {
+    "cpuFamilyIndex": 75,
+    "dataType": "benchmark",
+    "source": "Geekbench 6 Multi-Core Per-vCPU Normalized Index",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Normalized per-vCPU benchmark score for GCP E2 cost-optimized instances"
+  },
+  "gcp_compute_c2": {
+    "cpuFamilyIndex": 90,
+    "dataType": "benchmark",
+    "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Normalized per-vCPU SPECrate2017_int_base score for GCP C2 compute-optimized instances"
+  },
+  "azure_intel_ice_lake": {
+    "cpuFamilyIndex": 84,
+    "dataType": "benchmark",
+    "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Normalized per-vCPU SPECrate2017_int_base score for Azure Dsv5/Esv5 (Intel Ice Lake)"
+  },
+  "azure_intel_cascade_lake": {
+    "cpuFamilyIndex": 78,
+    "dataType": "benchmark",
+    "source": "SPEC CPU 2017 Relative Per-vCPU Performance Index",
+    "retrievedAt": "2026-09-23",
+    "methodology": "Normalized per-vCPU SPECrate2017_int_base score for Azure Fsv2/Bsv2 series"
+  }
+}
