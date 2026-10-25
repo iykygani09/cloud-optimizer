@@ -11,6 +11,9 @@ export default defineConfig({
     tailwindcss(),
     tsconfigPaths(),
   ],
+  build: {
+    cssMinify: "esbuild",
+  },
   server: {
     port: 5173,
     host: true,
