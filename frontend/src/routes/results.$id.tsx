@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { apiClient } from "@/api";
-import { CandidateCard, CarbonGeoShiftSimulator, DataBadge, DemoBanner, EmptyState, formatWorkload, GreenImpactTranslator, getProviderConsoleUrl, LiveGridTelemetryCard, PageHeader, providerClass, providerLabelMap, providerShort, ProviderSustainabilityBadge, ScopeCarbonBreakdown, BackButton } from "@/components/app-ui";
+import { CandidateCard, CarbonGeoShiftSimulator, DataBadge, DemoBanner, EmptyState, formatWorkload, GreenImpactTranslator, getProviderConsoleUrl, LiveGridTelemetryCard, PageHeader, providerClass, providerLabelMap, providerShort, ProviderSustainabilityBadge, ScopeCarbonBreakdown, TemporalShiftAdvisor, BackButton } from "@/components/app-ui";
 import { REGIONAL_GRID_SIGNALS, type AnalysisResult, type CandidateConfig, type RegionGroup } from "@/types";
 
 export const Route = createFileRoute("/results/$id")({
@@ -327,52 +327,15 @@ function ResultsView({ analysis }: { analysis: AnalysisResult }) {
           <LiveGridTelemetryCard regionGroup={regGroup} />
         </div>
 
-        {/* Carbon-Aware Scheduling & Green Window Advisor */}
-        <div className="mt-6 rounded-lg border bg-card p-5 elevation-1">
-          <div className="flex flex-wrap items-center justify-between gap-3 border-b pb-3">
-            <div className="flex items-center gap-2.5">
-              <span className={`p-1.5 rounded-md ${urgency === 'urgent' ? 'bg-warning/10 text-warning' : 'bg-success/10 text-success'}`}>
-                {urgency === 'urgent' ? <Zap className="size-4" /> : <Leaf className="size-4" />}
-              </span>
-              <div>
-                <h3 className="text-sm font-bold text-foreground">
-                  {urgency === 'urgent' ? '⚡ Urgent Mode: Immediate Execution Advisor' : '🌿 Carbon-Aware Scheduling Advisor'}
-                </h3>
-                <p className="text-xs text-muted-foreground">
-                  Real-time regional grid intelligence & scheduling recommendations
-                </p>
-              </div>
-            </div>
-            <Badge variant="outline" className="text-xs font-mono">
-              Live Grid: {gridSignal.intensity} gCO₂e/kWh ({gridSignal.status})
-            </Badge>
-          </div>
-
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
-            <div className="rounded-md border border-border bg-muted/30 p-3.5">
-              <p className="text-xs font-semibold text-foreground flex items-center gap-1.5">
-                <span className="size-2 rounded-full bg-primary" />
-                {urgency === 'urgent' ? 'Immediate Execution Advice' : 'Optimal Scheduling Window'}
-              </p>
-              <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-                {urgency === 'urgent'
-                  ? `For immediate launch, ${providerLabelMap[balanced?.provider || 'gcp']} (${balanced?.configName || 'optimal VM'}) is your cleanest option in ${regLabel}, emitting ${(getCarbon(balanced || candidates[0]) * durationRatio).toFixed(2)} kg CO₂e during your ${durationValue} ${durationUnit}.`
-                  : `This workload is flexible! To minimize carbon emissions, schedule execution during the optimal green window: ${gridSignal.greenWindow}. Grid emissions drop significantly during this period.`}
-              </p>
-            </div>
-
-            <div className="rounded-md border border-success/30 bg-success/5 p-3.5">
-              <p className="text-xs font-semibold text-success flex items-center gap-1.5">
-                <Leaf className="size-3.5" />
-                Clean Region Shift Opportunity
-              </p>
-              <p className="mt-1.5 text-xs text-muted-foreground leading-relaxed">
-                {gridSignal.optimalAlternativeRegion
-                  ? `Shifting to ${gridSignal.optimalAlternativeRegion.name} cuts your carbon footprint by up to ${gridSignal.optimalAlternativeRegion.savingsPercent}% (saving ~${((getCarbon(balanced || candidates[0]) * durationRatio) * (gridSignal.optimalAlternativeRegion.savingsPercent / 100)).toFixed(2)} kg CO₂e)!`
-                  : `Western Europe is currently operating on high wind/solar penetration (210 gCO₂e/kWh), giving you maximum clean energy efficiency.`}
-              </p>
-            </div>
-          </div>
+        {/* Temporal Shift Advisor: 24-Hour Carbon Timeline & Green Window */}
+        <div className="mt-6">
+          <TemporalShiftAdvisor
+            regionGroup={regGroup}
+            currentEmissionsKg={Math.min(...candidates.map(getCarbon), 1) * durationRatio}
+            durationValue={durationValue}
+            durationUnit={durationUnit}
+            urgency={urgency as "urgent" | "flexible"}
+          />
         </div>
 
         <nav aria-label="Result sections" className="sticky top-16 z-30 mt-6 hidden rounded-md border bg-background/95 p-1 elevation-1 backdrop-blur lg:flex">

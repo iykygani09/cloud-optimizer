@@ -1,5 +1,5 @@
 import { Link, useLocation, useRouter } from "@tanstack/react-router";
-import { ArrowLeft, Award, BarChart3, BookOpen, Car, Check, ChevronDown, CircleHelp, Cloud, ExternalLink, FileDown, Globe2, History, Info, Leaf, Lightbulb, Menu, Moon, Network, Printer, Radio, RefreshCw, Settings2, Smartphone, Sparkles, Sun, TreePine, X, Zap } from "lucide-react";
+import { ArrowLeft, Award, BarChart3, BookOpen, Car, Check, ChevronDown, CircleHelp, Clock, Cloud, ExternalLink, FileDown, Globe2, History, Info, Leaf, Lightbulb, Menu, Moon, Network, Printer, Radio, RefreshCw, Settings2, Smartphone, Sparkles, Sun, TreePine, X, Zap } from "lucide-react";
 import { useEffect, useState, type ReactNode } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -664,6 +664,195 @@ export function CarbonGeoShiftSimulator({
           </span>
         </div>
       )}
+    </div>
+  );
+}
+
+export function TemporalShiftAdvisor({
+  regionGroup,
+  currentEmissionsKg,
+  durationValue,
+  durationUnit,
+  urgency,
+}: {
+  regionGroup: RegionGroup;
+  currentEmissionsKg: number;
+  durationValue: number;
+  durationUnit: string;
+  urgency: "urgent" | "flexible";
+}) {
+  const [selectedUrgency, setSelectedUrgency] = useState<"urgent" | "flexible">(urgency);
+  const currentHour = new Date().getHours();
+
+  // Synthetic 24-hour diurnal carbon profile scaled to regional characteristics
+  const curveProfiles: Record<RegionGroup, { base: number; solarDip: number; eveningSpike: number; bestWindow: string }> = {
+    india: { base: 640, solarDip: 180, eveningSpike: 90, bestWindow: "11:00 AM – 3:00 PM (Solar Peak)" },
+    us_east: { base: 380, solarDip: 60, eveningSpike: 55, bestWindow: "12:00 AM – 6:00 AM (Off-Peak Hydro/Wind)" },
+    europe_west: { base: 260, solarDip: 80, eveningSpike: 45, bestWindow: "1:00 AM – 5:00 AM & 12:00 PM – 3:00 PM (Wind/Solar)" },
+    southeast_asia: { base: 450, solarDip: 40, eveningSpike: 40, bestWindow: "11:00 PM – 5:00 AM (Off-Peak Thermal)" },
+  };
+
+  const profile = curveProfiles[regionGroup] || curveProfiles.india;
+
+  const hoursData = Array.from({ length: 24 }, (_, h) => {
+    let factor = 0;
+    // Solar window between 10am and 3pm
+    if (h >= 10 && h <= 15) {
+      factor = -profile.solarDip * Math.sin(((h - 10) / 5) * Math.PI);
+    }
+    // Evening fossil peak between 6pm and 10pm
+    else if (h >= 18 && h <= 22) {
+      factor = profile.eveningSpike * Math.sin(((h - 18) / 4) * Math.PI);
+    }
+    // Night off-peak
+    else if (h >= 1 && h <= 5) {
+      factor = -profile.solarDip * 0.4;
+    }
+    const val = Math.round(profile.base + factor);
+    return { hour: h, intensity: val };
+  });
+
+  const nowIntensity = hoursData[currentHour]?.intensity || profile.base;
+  const minIntensityObj = hoursData.reduce((prev, curr) => (curr.intensity < prev.intensity ? curr : prev), hoursData[0]!);
+  const savingsPercent = Math.max(10, Math.round(((nowIntensity - minIntensityObj.intensity) / nowIntensity) * 100));
+
+  const immediateEmissions = currentEmissionsKg;
+  const deferredEmissions = Math.max(0.01, Number((currentEmissionsKg * (1 - savingsPercent / 100)).toFixed(2)));
+  const savedEmissions = Number((immediateEmissions - deferredEmissions).toFixed(2));
+
+  // Hours to wait
+  const hoursToWait = minIntensityObj.hour >= currentHour ? minIntensityObj.hour - currentHour : 24 - currentHour + minIntensityObj.hour;
+
+  return (
+    <div className="rounded-xl border bg-card p-5 elevation-1">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b pb-3">
+        <div className="flex items-center gap-2.5">
+          <span className={`p-1.5 rounded-md ${selectedUrgency === "urgent" ? "bg-warning/10 text-warning" : "bg-success/10 text-success"}`}>
+            {selectedUrgency === "urgent" ? <Zap className="size-4" /> : <Clock className="size-4" />}
+          </span>
+          <div>
+            <h3 className="text-sm font-bold text-foreground">
+              Temporal Shift Advisor: 24-Hour Carbon-Aware Scheduling
+            </h3>
+            <p className="text-xs text-muted-foreground">
+              {selectedUrgency === "urgent" ? "Urgent workload: Execute immediately" : "Flexible workload: Deferred execution recommendation"}
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center rounded-lg border bg-muted/40 p-0.5 text-xs font-semibold">
+          <button
+            type="button"
+            onClick={() => setSelectedUrgency("urgent")}
+            className={`flex items-center gap-1.5 rounded-md px-3 py-1.5 transition-all ${
+              selectedUrgency === "urgent" ? "bg-card text-foreground shadow-sm" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            <Zap className="size-3 text-warning" />
+            Urgent (Run Now)
+          </button>
+          <button
+            type="button"
+            onClick={() => setSelectedUrgency("flexible")}
+            className={`flex items-center gap-1.5 rounded-md px-3 py-1.5 transition-all ${
+              selectedUrgency === "flexible" ? "bg-card text-success shadow-sm" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            <Leaf className="size-3 text-success" />
+            Flexible (Wait for Clean Grid)
+          </button>
+        </div>
+      </div>
+
+      {/* 24-Hour Grid Bar Timeline */}
+      <div className="mt-4">
+        <div className="flex items-center justify-between text-xs text-muted-foreground mb-1.5">
+          <span className="flex items-center gap-1.5">
+            <span className="size-2 rounded-full bg-primary animate-pulse" />
+            24-Hour Grid Carbon Forecast ({regionGroup.replace("_", " ").toUpperCase()})
+          </span>
+          <span className="font-mono text-[10px]">Current Hour: {currentHour}:00 ({nowIntensity} gCO₂e/kWh)</span>
+        </div>
+
+        <div className="flex items-end gap-0.5 sm:gap-1 h-14 bg-muted/20 p-1.5 rounded-lg border">
+          {hoursData.map((d) => {
+            const isNow = d.hour === currentHour;
+            const isBest = d.hour === minIntensityObj.hour;
+            const heightPercent = Math.max(25, Math.round(((d.intensity - (profile.base - profile.solarDip * 1.1)) / (profile.solarDip * 2)) * 100));
+            const isGreenHour = d.intensity <= profile.base - profile.solarDip * 0.4;
+
+            return (
+              <div
+                key={d.hour}
+                className="group relative flex flex-1 flex-col items-center justify-end h-full"
+                title={`${d.hour}:00 - ${d.intensity} gCO₂e/kWh ${isNow ? "(CURRENT TIME)" : ""} ${isBest ? "(CLEANEST HOUR)" : ""}`}
+              >
+                <div
+                  style={{ height: `${Math.min(100, Math.max(15, heightPercent))}%` }}
+                  className={`w-full rounded-t-sm transition-all ${
+                    isNow
+                      ? "bg-primary ring-1 ring-primary ring-offset-1"
+                      : isBest
+                      ? "bg-success"
+                      : isGreenHour
+                      ? "bg-success/60"
+                      : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                />
+                {isNow && (
+                  <span className="absolute -top-3 size-1.5 rounded-full bg-primary ring-2 ring-primary/40 animate-ping" />
+                )}
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="flex justify-between text-[9px] text-muted-foreground font-mono mt-1 px-1">
+          <span>00:00</span>
+          <span>06:00</span>
+          <span>12:00 (Solar Peak)</span>
+          <span>18:00 (Evening Peak)</span>
+          <span>23:00</span>
+        </div>
+      </div>
+
+      {/* Comparison Verdict */}
+      <div className="mt-4 grid gap-3 sm:grid-cols-2">
+        <div className={`rounded-lg border p-3.5 transition-all ${selectedUrgency === "urgent" ? "border-primary bg-primary/5 ring-1 ring-primary" : "border-border bg-muted/20"}`}>
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-foreground flex items-center gap-1.5">
+              <Zap className="size-3.5 text-warning" />
+              Option A: Execute Immediately (Urgent)
+            </span>
+            {selectedUrgency === "urgent" && <Badge className="bg-primary text-[9px] font-semibold text-primary-foreground">Selected Mode</Badge>}
+          </div>
+          <p className="mt-2 font-mono text-base font-bold text-foreground">
+            {immediateEmissions.toFixed(2)} <span className="text-xs font-normal text-muted-foreground">kg CO₂e</span>
+          </p>
+          <p className="mt-1 text-[11px] text-muted-foreground leading-relaxed">
+            Running right now at {nowIntensity} gCO₂e/kWh. Recommended if your workload is time-sensitive (e.g. production bug fix, live API).
+          </p>
+        </div>
+
+        <div className={`rounded-lg border p-3.5 transition-all ${selectedUrgency === "flexible" ? "border-success bg-success/5 ring-1 ring-success" : "border-border bg-muted/20"}`}>
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-semibold text-success flex items-center gap-1.5">
+              <Leaf className="size-3.5" />
+              Option B: Shift to Green Window (Flexible)
+            </span>
+            <Badge className="border-success/30 bg-success/20 text-[9px] font-semibold text-success">
+              Save ~{savingsPercent}% Carbon
+            </Badge>
+          </div>
+          <p className="mt-2 font-mono text-base font-bold text-success">
+            {deferredEmissions.toFixed(2)} <span className="text-xs font-normal text-muted-foreground">kg CO₂e</span>
+            <span className="ml-2 text-xs font-semibold text-success">(-{savedEmissions} kg)</span>
+          </p>
+          <p className="mt-1 text-[11px] text-muted-foreground leading-relaxed">
+            Wait <strong>~{hoursToWait} hours</strong> for {profile.bestWindow} ({minIntensityObj.intensity} gCO₂e/kWh) to avoid fossil peak generation!
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
