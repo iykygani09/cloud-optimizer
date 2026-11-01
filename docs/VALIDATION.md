@@ -1,7 +1,7 @@
 # Scenario Validation Matrix (`docs/VALIDATION.md`)
 
 **Dataset Version:** `2026-09-23`  
-**Generated At:** 2026-10-25T07:52:58.908Z  
+**Generated At:** 2026-11-01T09:58:58.749Z  
 **Scope:** 9 Canonical PRD Workload Scenarios across 3 Cloud Providers (AWS, GCP, Azure) and 4 Region Groups.
 
 ---

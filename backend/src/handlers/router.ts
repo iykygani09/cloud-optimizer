@@ -29,6 +29,7 @@ export const metaData: MetaInfo = {
     { id: 'azure-retail-prices', name: 'Azure Retail Prices API', url: 'https://azure.microsoft.com/en-us/pricing/', type: 'official', retrievedAt: '2026-09-23' },
     { id: 'gcp-billing-catalog', name: 'Google Cloud Billing Catalog API', url: 'https://cloud.google.com/billing/docs/resources/api', type: 'official', retrievedAt: '2026-09-23' },
     { id: 'ccf-coefficients', name: 'Cloud Carbon Footprint Coefficients', url: 'https://www.cloudcarbonfootprint.org/docs/coefficients-pipeline', type: 'estimated', retrievedAt: '2026-09-23' },
+    { id: 'electricity-maps-live', name: 'Electricity Maps Live Carbon Intensity API v3', url: 'https://api.electricitymap.org/v3', type: 'official', retrievedAt: '2026-11-01' },
   ],
 };
 

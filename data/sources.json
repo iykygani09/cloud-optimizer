@@ -52,5 +52,14 @@
     "terms": "SPEC CPU Benchmark Results Public Repository",
     "retrievedAt": "2026-09-23",
     "usedFor": ["cpu_family_index"]
+  },
+  {
+    "id": "electricity-maps-api-v3",
+    "name": "Electricity Maps Live Carbon Intensity API v3",
+    "url": "https://api.electricitymap.org/v3",
+    "type": "official",
+    "terms": "Electricity Maps Free Community & Academic Developer License",
+    "retrievedAt": "2026-11-01",
+    "usedFor": ["live_grid_intensity", "hourly_renewable_percentage", "grid_status"]
   }
 ]

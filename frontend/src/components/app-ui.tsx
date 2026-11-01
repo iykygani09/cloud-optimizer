@@ -326,8 +326,37 @@ export function CandidateCard({ candidate, recommended }: { candidate: Candidate
   );
 }
 
+import { fetchLiveGridTelemetry, type LiveGridTelemetryResult } from "@/services/live-grid";
+
 export function LiveGridTelemetryCard({ regionGroup }: { regionGroup: RegionGroup }) {
-  const signal = REGIONAL_GRID_SIGNALS[regionGroup] || REGIONAL_GRID_SIGNALS.india;
+  const [telemetry, setTelemetry] = useState<LiveGridTelemetryResult>(() => ({
+    ...(REGIONAL_GRID_SIGNALS[regionGroup] || REGIONAL_GRID_SIGNALS.india),
+    isLive: false,
+    retrievedAt: new Date().toISOString(),
+    sourceType: "baseline",
+  }));
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    let mounted = true;
+    setIsLoading(true);
+    fetchLiveGridTelemetry(regionGroup)
+      .then((res) => {
+        if (mounted) {
+          setTelemetry(res);
+          setIsLoading(false);
+        }
+      })
+      .catch(() => {
+        if (mounted) setIsLoading(false);
+      });
+
+    return () => {
+      mounted = false;
+    };
+  }, [regionGroup]);
+
+  const signal = telemetry;
   const statusCls =
     signal.status === "Clean"
       ? "text-success border-success/30 bg-success/10"
@@ -340,14 +369,21 @@ export function LiveGridTelemetryCard({ regionGroup }: { regionGroup: RegionGrou
       <div className="flex flex-wrap items-center justify-between gap-2 border-b pb-3">
         <div className="flex items-center gap-2">
           <span className="relative flex size-2.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-success opacity-75"></span>
-            <span className="relative inline-flex size-2.5 rounded-full bg-success"></span>
+            <span className={`absolute inline-flex h-full w-full animate-ping rounded-full ${signal.isLive ? "bg-success" : "bg-primary"} opacity-75`}></span>
+            <span className={`relative inline-flex size-2.5 rounded-full ${signal.isLive ? "bg-success" : "bg-primary"}`}></span>
           </span>
-          <span className="text-xs font-bold uppercase tracking-wider text-foreground">Real-Time Grid Telemetry</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-foreground">
+            Real-Time Grid Telemetry {signal.isLive ? "(Live API)" : ""}
+          </span>
         </div>
-        <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${statusCls}`}>
-          {signal.status} Grid
-        </span>
+        <div className="flex items-center gap-2">
+          {isLoading && (
+            <span className="text-[10px] text-muted-foreground animate-pulse">Syncing...</span>
+          )}
+          <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${statusCls}`}>
+            {signal.status} Grid
+          </span>
+        </div>
       </div>
 
       <div className="mt-3 grid grid-cols-2 gap-3 text-xs sm:grid-cols-4">
@@ -360,7 +396,7 @@ export function LiveGridTelemetryCard({ regionGroup }: { regionGroup: RegionGrou
         <div>
           <span className="text-[10px] text-muted-foreground">Clean Energy Mix</span>
           <p className="metric mt-0.5 text-base font-bold text-success">
-            {signal.renewableMix}% <span className="text-[11px] font-normal text-muted-foreground">renewable</span>
+            {signal.renewableMix}% <span className="text-[11px] font-normal text-muted-foreground">clean</span>
           </p>
         </div>
         <div>
@@ -377,9 +413,15 @@ export function LiveGridTelemetryCard({ regionGroup }: { regionGroup: RegionGrou
         </div>
       </div>
 
-      <div className="mt-3 border-t pt-2 text-[10px] text-muted-foreground flex items-center justify-between">
-        <span>📡 Real-Time Grid Signal: {signal.gridSource}</span>
-        <span className="font-mono text-[9px] text-success">● Synced live</span>
+      <div className="mt-3 border-t pt-2 text-[10px] text-muted-foreground flex flex-wrap items-center justify-between gap-2">
+        <span className="flex items-center gap-1.5 truncate">
+          <span>📡 Grid Feed:</span>
+          <strong className="text-foreground">{signal.gridSource}</strong>
+        </span>
+        <span className="font-mono text-[9px] text-success flex items-center gap-1">
+          <span className="size-1.5 rounded-full bg-success inline-block"></span>
+          {signal.isLive ? "Live Electricity Maps API v3" : "Baseline Active"}
+        </span>
       </div>
     </div>
   );
@@ -515,11 +557,37 @@ export function CarbonGeoShiftSimulator({
   durationValue: number;
   durationUnit: string;
 }) {
+  const [intensities, setIntensities] = useState<Record<RegionGroup, number>>({
+    europe_west: 210,
+    us_east: 378,
+    southeast_asia: 406,
+    india: 708,
+  });
+
+  useEffect(() => {
+    let mounted = true;
+    const regionKeys: RegionGroup[] = ["europe_west", "us_east", "southeast_asia", "india"];
+    Promise.all(regionKeys.map((r) => fetchLiveGridTelemetry(r)))
+      .then((results) => {
+        if (!mounted) return;
+        const map: Partial<Record<RegionGroup, number>> = {};
+        results.forEach((res, idx) => {
+          map[regionKeys[idx]!] = res.intensity;
+        });
+        setIntensities((prev) => ({ ...prev, ...(map as Record<RegionGroup, number>) }));
+      })
+      .catch(() => {});
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
+
   const regions: { id: RegionGroup; label: string; intensity: number; flag: string }[] = [
-    { id: "europe_west", label: "Western Europe (Ireland / Belgium)", intensity: 210, flag: "🇪🇺" },
-    { id: "us_east", label: "US East (N. Virginia)", intensity: 378, flag: "🇺🇸" },
-    { id: "southeast_asia", label: "Southeast Asia (Singapore)", intensity: 406, flag: "🇸🇬" },
-    { id: "india", label: "India (Mumbai / Pune)", intensity: 708, flag: "🇮🇳" },
+    { id: "europe_west", label: "Western Europe (Ireland / Belgium)", intensity: intensities.europe_west, flag: "🇪🇺" },
+    { id: "us_east", label: "US East (N. Virginia)", intensity: intensities.us_east, flag: "🇺🇸" },
+    { id: "southeast_asia", label: "Southeast Asia (Singapore)", intensity: intensities.southeast_asia, flag: "🇸🇬" },
+    { id: "india", label: "India (Mumbai / Pune)", intensity: intensities.india, flag: "🇮🇳" },
   ];
 
   const currentSignal = regions.find((r) => r.id === currentRegion) || regions[3]!;
